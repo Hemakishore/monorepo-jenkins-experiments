@@ -5,7 +5,7 @@ pipeline {
       steps {
         script {
             def v = checkout scm
-            v.dump()
+            echo v.dump()
         }
       }
     }
